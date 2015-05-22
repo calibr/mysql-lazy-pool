@@ -1,5 +1,3 @@
-var mysql = require("mysql");
-
 var
     Connection = require("mysql/lib/PoolConnection"),
     EventEmitter = require('events').EventEmitter;
