@@ -1,0 +1,27 @@
+{
+  "name": "mysql-lazy-pool",
+  "version": "0.1.0",
+  "description": "Patches node-mysql to get lazy pool ability",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/calibr/mysql-lazy-pool.git"
+  },
+  "keywords": [
+    "mysql",
+    "pool",
+    "lazy"
+  ],
+  "peerDependencies": {
+    "mysql": "2.6.2"
+  },
+  "author": "calibr <awcalibr@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calibr/mysql-lazy-pool/issues"
+  },
+  "homepage": "https://github.com/calibr/mysql-lazy-pool"
+}
