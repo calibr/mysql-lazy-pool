@@ -1,6 +1,6 @@
 var
-    Connection = require("mysql/lib/PoolConnection"),
-    EventEmitter = require('events').EventEmitter;
+  Connection = require("mysql/lib/PoolConnection"),
+  EventEmitter = require('events').EventEmitter;
 
 
 var LazyPoolConnection = function( pool ){
