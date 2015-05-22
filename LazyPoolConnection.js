@@ -81,9 +81,9 @@ LazyPoolConnection.prototype._processOn = function( method, eventName, cb ){
 // proxy Connection methods
 
 var proxyMethods = [];
-for( var k in Connection.prototype ){
+for( var k in Connection.prototype ) {
 
-  if( typeof Connection.prototype[k] != "function" ){
+  if( typeof Connection.prototype[k] != "function" ) {
     continue;
   }
 
@@ -98,7 +98,7 @@ proxyMethods.forEach(function( name ){
     return;
   }
 
-  LazyPoolConnection.prototype[name] = function(  ){
+  LazyPoolConnection.prototype[name] = function() {
 
     var that = this;
     var args = Array.prototype.slice.call(arguments);
@@ -114,7 +114,7 @@ proxyMethods.forEach(function( name ){
       }
     }
 
-    that._getConnection( function( error, connection ){
+    that._getConnection( function( error, connection ) {
 
       if( error ){
         if( args.length > 0 && typeof args[args.length-1] == "function" ){
