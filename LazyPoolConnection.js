@@ -3,7 +3,7 @@ var
   EventEmitter = require('events').EventEmitter;
 
 
-var LazyPoolConnection = function( pool ){
+var LazyPoolConnection = function(pool) {
 
   this._pool = pool;
   this._connection = null;
@@ -133,6 +133,13 @@ proxyMethods.forEach(function( name ){
   };
 
 });
+
+/*
+ * process on and once calls of EventEmitter
+ */
+LazyPoolConnection.prototype.escape = function() {
+  return this._pool.escape.apply(this._pool, arguments);
+};
 
 
 module.exports = LazyPoolConnection;

@@ -1,6 +1,6 @@
 {
   "name": "mysql-lazy-pool",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Patches node-mysql to get lazy pool ability",
   "main": "index.js",
   "scripts": {
